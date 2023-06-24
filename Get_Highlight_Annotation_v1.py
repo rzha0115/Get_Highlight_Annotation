@@ -37,8 +37,8 @@ def save_to_csv(highlights, annotations, output_path):
     df = pd.DataFrame(data)
     df.to_csv(output_path, index=False, encoding='utf-8-sig')
 
-pdf_path = 'C:\\Users\\Runze\\Desktop\\The economist\\TheEconomist.2023.01.07.pdf'
-output_path = 'C:\\Users\\Runze\\Desktop\\The economist\\output1.csv'
+pdf_path = 'C:\\Users\\YourName\\Desktop\\FolderName\\XXXX.pdf'
+output_path = 'C:\\Users\\YourName\\Desktop\\FolderName\\outputName.csv'
 
 highlights, annotations = extract_highlights_and_annotations(pdf_path)
 save_to_csv(highlights, annotations, output_path)
